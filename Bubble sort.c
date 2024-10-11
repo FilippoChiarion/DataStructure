@@ -1,14 +1,12 @@
 #include <stdio.h>
-#include <locale.h>
 
 int main(){
-    setlocale(0,"Portuguese");
     int n,i;
-    printf("Quantos números você deseja ordenar: ");
+    printf("How many numbers do you want to sort: ");
     scanf("%d",&n);
     int v[n];
     for(i=0;i<n;i++){
-        printf("Valor %d: ",i+1);
+        printf("Value %d: ",i+1);
         scanf("%d",&v[i]);}
 
 
@@ -20,9 +18,10 @@ int main(){
             v[i+1]=temp;
         }
     }
-} printf("\n");
+}
+    printf("\n");
     for(i=0;i<n;i++){
-        printf("Valor %d = %d\n",i+1,v[i]);
+        printf("Value %d = %d\n",i+1,v[i]);
     }
 
     return 0;
